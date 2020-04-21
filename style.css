@@ -1,0 +1,69 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+/* font-family: 'Playfair Display', serif;
+font-family: 'Roboto', sans-serif; */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+
+    background: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header {
+}
+
+.header__title {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 47px;
+    text-align: center;
+}
+
+.header__nav {
+}
+
+.header__list {
+    display: flex;
+    list-style: none;
+
+    font-size: 15px;
+    line-height: 18px;
+}
+.header__item + .header__item {
+    margin-left: 54px;
+}
+
+.hotel {
+    height: 464px;
+    background-image: url("img/bg.jpg");
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.hotel__title {
+}
+.hotel__text {
+}
