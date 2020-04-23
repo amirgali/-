@@ -25,6 +25,13 @@ a {
     color: #000000;
 }
 
+h3, 
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     max-width: 1200px;
     padding: 0 15px;
@@ -32,15 +39,20 @@ a {
 }
 
 .header {
+    margin-bottom: 46px;
 }
 
 .header__title {
+    margin-top: 60px;
+    margin-bottom: 46px;
+
     font-family: Playfair Display;
     font-style: normal;
     font-weight: 900;
     font-size: 35px;
     line-height: 47px;
     text-align: center;
+    letter-spacing: 1px;
 }
 
 .header__nav {
@@ -48,10 +60,12 @@ a {
 
 .header__list {
     display: flex;
+    justify-content: space-around;
     list-style: none;
 
     font-size: 15px;
     line-height: 18px;
+    letter-spacing: 2px;
 }
 .header__item + .header__item {
     margin-left: 54px;
@@ -59,11 +73,73 @@ a {
 
 .hotel {
     height: 464px;
+    margin-bottom: 44px;
     background-image: url("img/bg.jpg");
     background-repeat: no-repeat;
+    background-position: top center;
     object-fit: cover;
+
+    
+    text-align: center;
 }
-.hotel__title {
+
+.hotel__link {
+    margin-top: 133px;
+    margin-bottom: 112px;
+    display: inline-block;
+
+    font-size: 72px;
+    line-height: 84px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
+
 .hotel__text {
+    display: inline-block;
+    width: 456px;
+
+    line-height: 24px;
+    text-indent: 20px;
+    color: #FFFFFF;
+}
+
+.review {
+    margin-bottom: 84px;
+}
+
+.review__title {
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.review__list {
+    display: flex;
+    justify-content: space-between;
+
+    list-style: none;
+}
+
+.review__item {
+    width: 370px;
+}
+
+.review__img {
+    margin-bottom: 14px;
+}
+
+.review__list-title {
+    margin-bottom: 10px;
+
+    font-family: Playfair Display;
+    font-weight: 900;
+    font-size: 23px;
+    line-height: 31px;
+}
+
+.review__link {
+}
+.review__text {
+
 }
