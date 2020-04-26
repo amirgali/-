@@ -72,6 +72,7 @@ ul {
 }
 
 .hotel {
+    position: relative;
     height: 464px;
     margin-bottom: 44px;
     background-image: url("img/bg.jpg");
@@ -81,6 +82,16 @@ ul {
 
     
     text-align: center;
+}
+
+.hotel::before {
+    position: absolute;
+    content: "";
+    width: 55px;
+    height: 55px;
+    top: 46px;
+    left: 48%;
+    background-image: url(img/hotel-icon.svg);
 }
 
 .hotel__link {
@@ -105,7 +116,7 @@ ul {
 }
 
 .review {
-    margin-bottom: 84px;
+    margin-bottom: 55px;
 }
 
 .review__title {
@@ -138,8 +149,147 @@ ul {
     line-height: 31px;
 }
 
-.review__link {
+.abonement {
+    margin-bottom: 50px;
+
+
+    background: #F7F7F7;
+    background-image: url(img/abonement-ellipse.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
 }
-.review__text {
+
+.abonement__title {
+    padding-top: 33px;
+    margin-bottom: 36px;
+
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+
+.abonement__list {
+    display: block;
+    list-style: none;
+}
+.abonement__item {
+    display: block;
+    margin-bottom: 49px;
+    
+}
+.abonement__item-title {
+    margin-bottom: 10px;
+
+    font-family: Playfair Display;
+    font-weight: 900;
+    font-size: 23px;
+    line-height: 31px;
+}
+
+.abonement__link {
+    position: relative;
+    margin-bottom: 36px;
+    display: inline-block;
+    padding: 16px 30px;
+    padding-right: 58px;
+
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    background: #FF7931;
+    
+}
+
+.abonement__link::before {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 24px;
+    top: 11px;
+    left: 117px;
+    background-image: url(img/arrow_forward.svg);
+    background-repeat: no-repeat;
+}
+
+.footer {
+    background: #575757;
+}
+
+.footer__title {
+    padding-top: 26px;
+    margin-bottom: 32px;
+
+    color: #FFFFFF;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.footer__nav {
+    position: relative;
+    padding-bottom: 46px;
+    
+}
+
+.footer__nav::after {
+    position: absolute;
+    margin-top: 20px;
+    content: "";
+    width: 100%;
+    height: 1px;
+    top: 46px;
+    border-bottom: 1px solid #ffffff;
+    opacity: 0.4;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 2px;
+}
+.footer__item + .footer__item {
+    margin-left: 54px;
+}
+
+.footer__link {
+    color: #FFFFFF;
+}
+
+.footer__social {
+    display: flex;
+    justify-content: center;
+    
+    background: #575757;
+}
+
+.footer__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 46px;
+    margin-bottom: 46px;
+    margin-right: 14px;
+    width: 47px;
+    height: 47px;
+
+    background-color: #FFFFFF;
+}
+
+.footer__social-img {
 
 }
