@@ -71,6 +71,26 @@ ul {
     margin-left: 54px;
 }
 
+.header__item {
+    position: relative;
+}
+
+.header__item:after {
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    left: 0;
+    z-index: 1;
+    width: 0;
+    height: 2px;
+    background-color: #000000;
+    transition: width 0.2s linear;
+}
+
+.header__item:hover:after {
+     width: 100%;
+}
+
 .hotel {
     position: relative;
     height: 464px;
@@ -176,9 +196,21 @@ ul {
 }
 .abonement__item {
     display: block;
-    margin-bottom: 49px;
-    
+    position: relative;
+    margin-bottom: 49px;    
 }
+
+.abonement__item:not(:nth-child(3)):after {
+    position: absolute;
+    content: "";
+    bottom: -13px;
+    top: 105px;
+    left: 534px;
+    width: 100px;
+    border-bottom: 1px solid #000000;
+    opacity: 0.2;
+}
+
 .abonement__item-title {
     margin-bottom: 10px;
 
@@ -265,6 +297,27 @@ ul {
     margin-left: 54px;
 }
 
+.footer__item {
+    position: relative;
+}
+
+.footer__item:after {
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    left: 0;
+    z-index: 1;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    opacity: 0.4;
+    transition: width 0.2s linear;
+}
+
+.footer__item:hover:after {
+     width: 100%;
+}
+
 .footer__link {
     color: #FFFFFF;
 }
@@ -288,6 +341,11 @@ ul {
     height: 47px;
 
     background-color: #FFFFFF;
+    transition: transform 0.2s linear;  
+}
+
+.footer__social-link:hover {
+    transform: translateY(-5px);
 }
 
 .footer__social-img {
